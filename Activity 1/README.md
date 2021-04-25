@@ -1,5 +1,11 @@
 # Embedded C Mini Project
 
+#### CI and Code Quality
+
+|Build|Cppcheck|Codacy|
+|:--:|:--:|:--:|
+[![Compile-Linux](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/compile.yml/badge.svg)](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/compile.yml)|[![Cppcheck](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/cppcheck.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/643b7ca2b2dc4daba1e700c216bb87d9)](https://www.codacy.com/gh/Bharathgopal/Emb-C/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Bharathgopal/Emb-C&amp;utm_campaign=Badge_Grade)|
+
 # Case Study
 
 ## Activity 1
@@ -17,8 +23,4 @@
 ![Act(11)](https://user-images.githubusercontent.com/72341259/115951390-28515780-a4fe-11eb-8d86-330b9c8df584.png)
 
 
-#### CI and Code Quality
 
-|Build|Cppcheck|Codacy|
-|:--:|:--:|:--:|
-[![Compile-Linux](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/compile.yml/badge.svg)](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/compile.yml)|[![Cppcheck](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/256182/EMBEDDED_MINI_PROJECT_LTTS/actions/workflows/cppcheck.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/643b7ca2b2dc4daba1e700c216bb87d9)](https://www.codacy.com/gh/Bharathgopal/Emb-C/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Bharathgopal/Emb-C&amp;utm_campaign=Badge_Grade)|
