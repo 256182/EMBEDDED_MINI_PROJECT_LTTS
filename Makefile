@@ -40,7 +40,7 @@ $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
 analysis: $(SRC)
-# Analyse the code using Cppchecks command line utility
+# Analyse the code using Cppcheck command line utility
 	cppcheck --enable=all $^
 
 doc:
