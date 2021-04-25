@@ -9,7 +9,7 @@ src/user_utils.c
 # All header file paths
 INC = -I inc
 
-# Find out the OS and configure the variables accordingly
+# Find out the OS and configures the variables accordingly
 ifdef OS	# All configurations for Windwos OS
 # Correct the path based on OS
    FixPath = $(subst /,\,$1)
