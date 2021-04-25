@@ -1,15 +1,16 @@
-#ifndef __BLINKY_H_
-#define __BLINKY_H_
 /**
- * @file blinky.h
- * @author Bharath.G ()
- * @brief Project to Blink an LED connected to AVR328 MCU GPIO Pin
+ * @file LED.h
+ * @author Mehul Kothari
+ * @brief Define led state
  * @version 0.1
- * @date 2021-04-21
+ * @date 2021-04-25
  * 
  * @copyright Copyright (c) 2021
  * 
  */
+#ifndef __LED_H_
+#define __LED_H_
+
 
 /**
  * Macro Definitions
@@ -37,4 +38,4 @@
 void change_led_state(uint8_t state);
 
 
-#endif /** __BLINKY_H_ */
+#endif /* LED.H */

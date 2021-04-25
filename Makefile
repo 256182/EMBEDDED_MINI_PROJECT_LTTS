@@ -1,4 +1,4 @@
-PROJ_NAME = Blinky
+PROJ_NAME = ACTIVITY1
 
 BUILD_DIR = Build
 

@@ -1,9 +1,9 @@
 /**
  * @file project_main.c
- * @author Bharath.G ()
- * @brief Project to Blink an LED at 1000ms ON and 500 ms OFF Interval
+ * @author Mehul Kothari(mehulkothari14@gmail.com)
+ * @brief Activity 1
  * @version 0.1
- * @date 2021-04-23
+ * @date 2021-04-25
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -11,7 +11,7 @@
 #include "project_config.h"
 
 #include "user_utils.h"
-#include "blinky.h"
+#include "LED.h"
 
 /**
  * @brief Initialize all the Peripherals and pin configurations
@@ -19,8 +19,16 @@
  */
 void peripheral_init(void)
 {
-	/* Configure LED Pin */
-	DDRB |= (1 << DDB0);
+	DDRB|=(1<<PB0); //Set the led pin for output
+
+    DDRD&=~(1<<PD0); //Clear bit DD0(for button sensor)
+
+    PORTD|=(1<<PD0); //Set bit DD0(for button sensor)
+
+    DDRD&=~(1<<PD1); //Clear bit DD1(for heater)
+
+    PORTD|=(1<<PD1); //Set bit DD1(for heater)
+
 }
 
 void change_led_state(uint8_t state)
@@ -41,13 +49,16 @@ int main(void)
 	/* Initialize Peripherals */
 	peripheral_init();
 
-	for(;;)
-	{
-        change_led_state(LED_ON);
-		delay_ms(LED_ON_TIME);
-		
-        change_led_state(LED_OFF);
-		delay_ms(LED_OFF_TIME);	
-	}
-	return 0;
+	 while(1){
+        if((!(PIND&(1<<PD0))) && (!(PIND&(1<<PD1)))){
+            change_led_state(LED_ON);
+			delay_ms(LED_ON_TIME);
+        }
+        else{
+            change_led_state(LED_ON);
+			delay_ms(LED_OFF_TIME);
+        }
+    }
+
+    return 0;
 }

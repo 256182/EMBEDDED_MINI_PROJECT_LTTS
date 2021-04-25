@@ -1,15 +1,16 @@
-#ifndef __PROJECT_CONFIG_H__
-#define __PROJECT_CONFIG_H__
 /**
  * @file project_config.h
- * @author Bharath.G ()
- * @brief Configuration file to define pins and ports for the interfaced peripherals
+ * @author Mehul Kothari
+ * @brief To assign macros to ports
  * @version 0.1
- * @date 2021-04-23
+ * @date 2021-04-25
  * 
  * @copyright Copyright (c) 2021
  * 
  */
+#ifndef __PROJECT_CONFIG_H__
+#define __PROJECT_CONFIG_H__
+
 
 /**
  * Macro Definitions
@@ -19,6 +20,5 @@
 
 #define LED_PORT (PORTB)    /**< LED Port Number */
 #define LED_PIN  (PORTB0)   /**< LED Pin number  */
-
 
 #endif /* __PROJECT_CONFIG_H__ */
