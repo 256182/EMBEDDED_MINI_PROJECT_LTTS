@@ -37,6 +37,6 @@
 
 void InitTimer1();
 void delay_milli(uint32_t delay_time);
-void GeneratePWM(uint16_t Temperature);
+char GeneratePWM(uint16_t Temperature);
 
 #endif /* ACTIVITY3.h */

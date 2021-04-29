@@ -38,22 +38,26 @@ void InitTimer1(){
  * 
  * @param Temperature 
  */
-void GeneratePWM(uint16_t Temperature){
+char GeneratePWM(uint16_t Temperature){
     
-    if(Temperature>=0 && Temperature<=200){
+    if(Temperature<=200){
         OUTPUT_COMPARE_A = 204.8;
         delay_milli(200);
+        return 'A';
     }
-    else if(Temperature>=201 && Temperature<=500){
+    else if(Temperature<=500){
         OUTPUT_COMPARE_A = 409.6;
         delay_milli(200);
+        return 'B';
     }
-    else if(Temperature>=501 && Temperature<=700){
+    else if(Temperature<=700){
         OUTPUT_COMPARE_A = 716.8;
         delay_milli(200);
+        return 'C';
     }
     else{
         OUTPUT_COMPARE_A = 972.8;
         delay_milli(200);
+        return 'D';
     }
 }

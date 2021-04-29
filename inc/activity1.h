@@ -25,6 +25,7 @@
 #define BUTTON_SWITCH  (PORTD0)   /**< BUTTON Switch  */
 #define SENSOR_DIRECTION_PIN (DDRD)  /**< Sensor Data Direction Number */
 #define HEATER_SWITCH (PORTD1)   /**< HEATER Switch  */
+#define BOTH_SWITCH_CONNECTED ((!(SENSOR_PIN&(1<<BUTTON_SWITCH))) && (!(SENSOR_PIN&(1<<HEATER_SWITCH)))) /**<Both switch are connected**/
 /**
  * Include files
  */ 
