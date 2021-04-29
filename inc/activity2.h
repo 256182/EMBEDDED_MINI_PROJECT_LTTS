@@ -1,7 +1,7 @@
 /**
  * @file activity2.h
  * @author Mehul Kothari
- * @brief 
+ * @brief define functions and macros
  * @version 0.1
  * @date 2021-04-27
  * 

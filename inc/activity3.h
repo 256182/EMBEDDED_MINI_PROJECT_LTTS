@@ -1,7 +1,7 @@
 /**
  * @file ACTIVITY3.h
  * @author Mehul Kothari
- * @brief Defining macros for timer
+ * @brief Defining macros for timer functions
  * @version 0.1
  * @date 2021-04-28
  * 

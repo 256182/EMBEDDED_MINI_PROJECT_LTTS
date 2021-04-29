@@ -42,7 +42,7 @@
 void change_led_state(uint8_t state);
 
 /**
- * @brief Initialize peripherals 
+ * @brief Initialize peripheral 
  * 
  */
 void peripheral_init(void);
