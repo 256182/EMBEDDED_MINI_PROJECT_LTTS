@@ -4,8 +4,9 @@ BUILD_DIR = Build
 
 # All Source code files
 SRC = SeatHeatingApp.c\
-src/led.c\
-src/TemperatureSensor.c\
+src/activity1.c\
+src/activity2.c\
+src/activity3.c
 
 
 # All header file paths

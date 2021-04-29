@@ -9,7 +9,7 @@
  * 
  */
 
-#include "ACTIVITY2.h"
+#include "activity2.h"
 /**
  * @brief Function to Initialize ADC
  * 
