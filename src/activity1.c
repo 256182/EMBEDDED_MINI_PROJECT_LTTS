@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include "ACTIVITY1.h"
+#include "activity1.h"
 /**
  * @brief Function to intitalize peripherals 
  * 

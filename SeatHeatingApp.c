@@ -8,13 +8,15 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include"ACTIVITY1.h"
+#include"activity1.h"
 
-#include"ACTIVITY2.h"
+#include"activity2.h"
 
-#include"ACTIVITY3.h"
+#include"activity3.h"
 
-#include"ACTIVITY4.h"
+#include"activity4.h"
+
+#include<util/delay.h>
 /**
  * @brief Final code for the application
  * 
@@ -23,16 +25,21 @@
 
 int main(void)
 {
-    uint16_t tmp;
+    uint16_t tmp=0;
     // Initialize peripherals
     peripheral_init();
+    InitAdc();
+    InitTimer1();
     while(1)
     {
         if((!(SENSOR_PIN&(1<<BUTTON_SWITCH))) && (!(SENSOR_PIN&(1<<HEATER_SWITCH))))//If switch_1 and switch_2 is ON
         {
             change_led_state(LED_ON);
-            InitAdc();
+            
             tmp=ReadAdc(0);
+            GeneratePWM(tmp);
+            
+            
         }
         else
         {
