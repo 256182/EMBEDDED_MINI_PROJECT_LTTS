@@ -13,7 +13,7 @@ src/activity4.c
 # All header file paths
 INC = -I inc
 
-# Find out the OS and configures the variables accordingly
+# Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
    # Delete command 
    RM = rm -rf
