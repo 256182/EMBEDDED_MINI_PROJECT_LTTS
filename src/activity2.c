@@ -1,9 +1,9 @@
 /**
- * @file TemperatureSensor.c
+ * @file activity2.c
  * @author Mehul Kothari
  * @brief Defining macros for temperature sensor
  * @version 0.1
- * @date 2021-04-27
+ * @date 2021-04-30
  * 
  * @copyright Copyright (c) 2021
  * 

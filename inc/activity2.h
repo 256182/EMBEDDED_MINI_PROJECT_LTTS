@@ -24,6 +24,11 @@
  * Include files
  */ 
 #include <avr/io.h>
+/**
+ * @brief Global Variables
+ * 
+ */
+
 
 /**
  * Function Definitions

@@ -25,8 +25,10 @@
 
 int main(void)
 {
-    uint16_t tmp;
+    uint16_t volatile tmp;
     char tmp_type;
+    uint16_t const volatile ADC_value = 0;
+    uint16_t const volatile baud_value = 103;
     // Initialize peripherals
     peripheral_init();
     
@@ -36,11 +38,11 @@ int main(void)
         {
             change_led_state(LED_ON);
             InitAdc();
-            tmp=ReadAdc(0);
+            tmp=ReadAdc(ADC_value);
             InitTimer1();
             tmp_type=GeneratePWM(tmp);
             
-            USARTInit(103);
+            USARTInit(baud_value);
             USARTWriteChar(tmp_type);
             
             

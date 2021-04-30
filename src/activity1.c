@@ -1,9 +1,9 @@
 /**
- * @file led.c
+ * @file activity1.c
  * @author Mehul Kothari
  * @brief C Program to define peripherals and led state
  * @version 0.1
- * @date 2021-04-27
+ * @date 2021-04-30
  * 
  * @copyright Copyright (c) 2021
  * 

@@ -1,9 +1,9 @@
 /**
- * @file TimersCRO.c
+ * @file activity3.c
  * @author Mehul Kothari
- * @brief Function to initialize timer 1
+ * @brief Timers and Counter
  * @version 0.1
- * @date 2021-04-28
+ * @date 2021-04-30
  * 
  * @copyright Copyright (c) 2021
  * 
